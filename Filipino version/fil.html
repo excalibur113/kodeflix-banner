@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="./fil.css">
+    <title>Kodeflix - Watch Movies,Watch TV Shows Online</title>
+</head>
+<body>
+    <header class="netflix-logo">
+      <nav class="navbar">
+        <div class="navbar__brand">
+         <a href=""><img
+            src="../img/logo -2.png"
+            alt="logo"
+            class="brand__logo"
+          /></a> 
+        </div>
+
+        <div class="navbar__nav__items">
+          <div class="nav__item">
+            <div class="dropdown__container">
+              <i class="fas fa-globe"></i>
+              <select
+                name="languages"
+                id="languagesSelect"
+                class="language__drop__down"
+              >
+                <a href="../index.html"><option value="english" selected>English</option></a>
+                <a href="./fil.html"><option value="filipino">Filipino</option></a>
+              </select>
+            </div>
+          </div>
+
+          <div class="nav__item">
+            <a href="#"><button class="signin__button">Mag-sign in</button></a>
+          </div>
+        </div>
+      </nav>
+        <div class="netflix-content">
+            <h1>Walang limitasyon na pelikula, TV <br> shows at marami pang iba.</h1>
+            <p class="p-top">Manood kahit saan. Kanselahin kahit kailan.</p>
+            <p class="p-bot">Handa nang manood?  Ilagay ang email mo para gawin o simulan ulit ang pagiging kasapi mo.</p>
+            <div class="get-started">
+                <form action="#" id="form">
+                <input type="text" placeholder="Email address" id="email" onkeydown="validation()">
+                <br><br>
+            <span id="text"></span>
+            </form>
+                <div class="gs">
+                <button type="button" class="get-started-button" >Magsimula <i class="fa fa-angle-right"></i> </button>
+            </div> 
+            </div>
+        </div>
+    </header>
+    <hr>
+
+    <section class="enjoy">
+        <div class="enjoy-text">
+            <h1>Mag-enjoy sa TV mo.</h1>
+            <p>Manood sa mga TVs, Playstation,
+                Xbox, Chromecast, Apple TV, Blu-ray
+                players at marami pang iba.</p>
+        </div>
+            <div class="enjoy-img">
+                <img src="../img/tv.png" alt="TV Image">
+                <div class="enjoy-video">
+                    <video src="../img/tv-video.m4v" autoplay playsinline muted loop></video>
+                </div>
+            </div>
+    </section>
+
+    <hr>
+
+    <section class="download">
+        <div class="mobile">
+            <img class="mobile-img" src="../img/st.jpg" alt="Downloads">
+            <div class="box">
+                <div>
+                    <img src="../img/st-1.png" alt="BoxShot">
+                </div>
+                <div>
+                    <h2>Stranger Things</h2>
+                    <p>Downloading...</p>
+                </div>
+                <div>
+                    <img class="gif" src="../img/download-icon.gif" alt="Download Gif">
+                </div>
+            </div>
+        </div>
+        <div class="download-content">
+            <h1>I-download ang mga palabas mo para panoorin offline.</h1>
+            <p>Madaling i-save ang mga paborito mo at hindi ka mauubusan ng papanoorin.</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="stream">
+        <div class="stream-content">
+            <h1>Manood kahit saan</h1>
+            <p>Mag-stream ng walang limitasyon na pelikula at TV show sa phone, tablet, laptop, at TV mo.</p>
+        </div>
+            <div class="mac">
+                <img class="tv-mac" src="../img/tv2.png" alt="Mac">
+                <div class="tv-2">
+                    <video src="../img/tv-video2.mp4" autoplay muted loop playsinline></video>
+                    
+                </div>
+            </div>
+    </section>
+
+    <hr>
+    <section class="kids">
+      <div class="container">
+          <div class="left-part">
+              <img src="../img/kids.png" alt="Kids Logo">
+          </div>
+          <div class="right-part">
+              <h1>Gumawa ng mga profile para sa mga bata.</h1>
+              <p>Hayaang mag-adventure ang mga bata kasama ng mga paborito nilang character sa isang lugar na ginawa para lang sa kanila—libre sa pagiging kasapi mo.</p>
+          </div>
+      </div>
+  </section>
+  <hr>
+    <div>
+        <section class="freq">
+            <h1>Mga Madalas Itanong</h1>
+            <div class="questions">
+                <button type="button">Ano ang Kodeflix? <span class="toggle1" onclick="toggle1()" id="rot1">+</span></button>
+                <div class="faq-answer closed" id="ans1">
+                    <span>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam fugit nesciunt ipsum quibusdam fugiat, consequuntur, praesentium dignissimos nam sapiente optio illum mollitia facere, maiores ab! Dicta debitis id impedit sed!
+                        <br>
+                        <br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum quis officiis optio. Expedita inventore eaque veritatis modi perferendis praesentium quasi quaerat mollitia. Tempore qui voluptatem quos, voluptates consectetur asperiores unde?
+                    </span>
+                </div>
+                <button type="button">Magkano ang Kodeflix? <span onclick="toggle3()" id="rot3">+</span></button>
+                <div class="faq-answer closed" id="ans3">
+                    <span>
+                        Ito ay libre para sa lahat
+                    </span>
+                </div>
+                <button type="button">Saan ako puwedeng manood? <span onclick="toggle4()" id="rot4">+</span></button>
+                <div class="faq-answer closed" id="ans4">
+                    <span>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, ea odio. Quidem est quam aut deleniti, dolore, voluptas hic fugit dolores cupiditate ea laudantium tempora temporibus illo omnis, maxime architecto.
+                        <br>
+                        <br>
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius aliquid quaerat dolorum id accusamus molestias temporibus earum facere laboriosam, recusandae perferendis provident minima consectetur. Provident tempore dolores nobis facere veniam!
+                    </span>
+                </div>
+                <button type="button">Paano ko ito kakanselahin? <span onclick="toggle5()" id="rot5">+</span></button>
+                <div class="faq-answer closed" id="ans5">
+                    <span>
+                       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea eius fugit rem similique sunt dolorum nobis repellendus consectetur sapiente non nulla ut, ab doloribus sint blanditiis error. Provident, reprehenderit vel?
+                    </span>
+                </div>
+                <button type="button">Ano ang mapapanood ko sa Kodeflix <span onclick="toggle6()" id="rot6">+</span></button>
+                <div class="faq-answer closed" id="ans6">
+                    <span>
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsa repellendus obcaecati ad quisquam ut quia ipsum eligendi suscipit vero ab omnis dolorum sunt? Similique vero fuga aliquam vel accusantium?
+                    </span>
+                </div>
+            </div>
+            <p class="par-b">Handa nang manood? Ilagay ang email mo para gawin o simulan ulit ang membership mo.</p>
+            <div class="sec">
+            <div class="get-started ">
+                <form action="#" id="form">
+                <input type="text" placeholder="Email address" id="email" onkeydown="validation()">
+                <br><br>
+            <span id="text"></span>
+            </form>
+                <div class="gs">
+                <button type="button" class="get-started-button " >Mag simula <i class="fa fa-angle-right"></i> </button>
+            </div> 
+            </div>
+        </div>
+        </section>
+        
+            
+        
+    </div>
+    
+    
+    <hr>
+
+    <footer class="footer">
+        <a href="">May mga tanong ka ba? Makipag-ugnayan sa amin.</a>
+        <div class="footer-column">
+             <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Mga Pakikipag-ugnayan sa Investor</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>            
+            </ul>
+            <ul>
+                <li><a href="#">Help Centre</a></li>
+                <li><a href="#">Mga Trabaho</a></li>
+                <li><a href="#">Mga Preference sa Cookie</a></li>
+                <li><a href="#">Mga Legal na Abiso</a></li>            
+            </ul>
+             <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Mga Paraan para Manood</a></li>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">Sa Kodeflix lang</a></li>            
+            </ul>
+             <ul>
+                <li><a href="#">Media Centre</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Contact US</a></li>            
+            </ul>
+        </div>
+        <div class="last">
+          <div class="dropdown__container">
+            <i class="fas fa-globe"></i>
+            <select
+              name="languages"
+              id="languagesSelect"
+              class="language__drop__down"
+            >
+              <option value="english" selected>English</option>
+              <option value="filipino">Filipino</option>
+            </select>
+          </div>
+            <a href="" ><img src="./img/logo -2.png" alt="" class="bottom-logo"></a>
+        </div>
+    </footer>
+
+     <script src="./fil.js"></script>
+</body>
+</html>
