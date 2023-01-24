@@ -20,19 +20,6 @@
         </div>
 
         <div class="navbar__nav__items">
-          <div class="nav__item">
-            <div class="dropdown__container">
-              <i class="fas fa-globe"></i>
-              <select
-                name="languages"
-                id="languagesSelect"
-                class="language__drop__down"
-              >
-                <option value="english" selected>English</option>
-                <option value="filipino">Filipino</option>
-              </select>
-            </div>
-          </div>
 
           <div class="nav__item">
             <a href=""><button class="signin__button">Sign in</button></a>
@@ -44,11 +31,15 @@
             <p class="p-top">Watch anywhere. Cancel anytime.</p>
             <p class="p-bot">Ready to watch? Enter your email to create or restart your membership.</p>
             <div class="get-started">
-                <form action="#" id="form">
+                <form action="email" id="register">
+                <input type="text" name="email" id="email" placeholder="Email Address">
+                <small id="emailError"></small>
+            </form>
+                <!-- <form action="#" id="form">
                 <input type="text" placeholder="Email address" id="email" onkeydown="validation()">
                 <br><br>
             <span id="text"></span>
-            </form>
+            </form> -->
                 <div class="gs">
                 <button type="button" class="get-started-button" >Get Started <i class="fa fa-angle-right"></i> </button>
             </div> 
@@ -218,17 +209,6 @@
             </ul>
         </div>
         <div class="last">
-          <div class="dropdown__container">
-            <i class="fas fa-globe"></i>
-            <select
-              name="languages"
-              id="languagesSelect"
-              class="language__drop__down"
-            >
-              <option value="english" selected>English</option>
-              <option value="filipino">Filipino</option>
-            </select>
-          </div>
             <a href="" ><img src="./img/logo -2.png" alt="" class="bottom-logo"></a>
         </div>
     </footer>

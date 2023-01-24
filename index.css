@@ -1,79 +1,137 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    background: #000;
-    color: #fff;
-    position: absolute;
+body {
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
 }
+
 .navbar {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 3% 5%;
-  z-index: 10;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+    z-index: 10;
 }
 
 .navbar__brand {
-  width: 100px;
-  height: 100%;
+    width: 100px;
+    height: 100%;
 }
 
 .brand__logo {
-  width: 200px;
-  height: 100%;
+    width: 200px;
+    height: 100%;
+}
+
+/* .dropdown{
+    min-width: 15rem;
+    position: relative;
+    margin: 2em;
+}
+.select{
+    background:transparent;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px transparent solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+
+}
+.select:hover {
+background: black;
+}
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+.caret-rotate{
+    transform: rotate(180deg);
+}
+.language{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: transparent;
+    border: 1px solid black;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #fff;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+.language li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.active{
+    background: black;
+}
+.language-open{
+    display: block;
+    opacity: 1;
+} */
+.dropdown__container {
+    border: 1px solid white;
+    padding: 0.6rem;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
 }
 
 .language__drop__down {
-  background: black;
-  border: none;
-  color: white;
+    background: black;
+    border: none;
+    color: white;
 }
 
 .language__drop__down:focus {
-  outline: none;
+    outline: none;
 }
 
-.dropdown__container {
-  border: 1px solid white;
-  padding: 0.4rem;
-  border-radius: 4px;
-  background: rgba(0, 0, 0, 0.4);
-}
 
 .signin__button {
-  background-color: #dc030f;
-  border: 1px solid #dc030f;
-  color: white;
-  padding: 0.7rem;
-  border-radius: 4px;
+    background-color: #B41414;
+    border: 1px solid #B41414;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 4px;
 }
 
 .navbar__nav__items {
-  display: flex;
-  gap: 10px;
-}
-p{
-    margin: 0.5rem 0;
+    display: flex;
+    gap: 10px;
 }
 
-.netflix-logo{
+.netflix-logo {
     width: 100%;
     height: 685px;
     position: relative;
-    background:url("./img/banner.jpg") no-repeat center center/cover;
+    background: url("./img/banner.jpg") no-repeat center center/cover;
 }
 
-.netflix-logo::after{
+.netflix-logo::after {
     content: '';
     position: absolute;
     top: 0;
@@ -83,31 +141,31 @@ p{
     height: 685px;
     background: rgba(0, 0, 0, 0.6);
     box-shadow: inset 40px 30px 100px #000,
-                inset -40px -30px 100px #000;
+        inset -40px -30px 100px #000;
 }
 
-.netflix-header{
+.netflix-header {
     position: relative;
     height: 92px;
     z-index: 2;
 }
 
-.netflix-header img{
+.netflix-header img {
     width: 170px;
     position: absolute;
     top: 0;
     left: 40px;
 }
 
-.netflix-header button{
+.netflix-header button {
     position: absolute;
     top: 30px;
     right: 50px;
-     color: #fff;
+    color: #fff;
     text-decoration: none;
 }
 
-.netflix-content{
+.netflix-content {
     z-index: 2;
     position: relative;
     margin: auto;
@@ -116,7 +174,7 @@ p{
     justify-content: center;
     align-items: center;
     text-align: center;
-   top: 30%;
+    top: 30%;
 }
 
 .netflix-content h1 {
@@ -126,7 +184,7 @@ p{
     letter-spacing: 0.01px;
 }
 
-.p-top{
+.p-top {
     font-weight: 400;
     font-size: 22px;
     margin-top: 15px;
@@ -134,15 +192,15 @@ p{
     letter-spacing: 0.02em;
 }
 
-.p-bot{
+.p-bot {
     font-size: 16.3px;
     letter-spacing: 0.02em;
     margin-bottom: 1.2rem;
 }
 
-.btn{
+.btn {
     display: inline-block;
-    background: #e50914;
+    background: #B41414;
     color: #fff;
     padding: 7px 17px;
     font-size: 1rem;
@@ -157,16 +215,16 @@ p{
     letter-spacing: 0.4px;
 }
 
-.btn{
+.btn {
     transition: .7s;
 }
 
-button:hover{
+button:hover {
     background-color: #fa2f33;
     color: #fff;
 }
 
-.buttons{
+.buttons {
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -174,7 +232,7 @@ button:hover{
     top: 30px;
 }
 
-.get-started input{
+.get-started input {
     height: 58px;
     padding: 0 10px 0;
     width: 450px;
@@ -183,21 +241,21 @@ button:hover{
     border-right: 1.5px solid rgb(105, 102, 102);
 }
 
-.get-started{
+.get-started {
     position: relative;
     display: flex;
 }
 
-.gs{
+.gs {
     display: flex;
 
 }
 
-.get-started button{
+.get-started button {
     margin-right: 10px;
     font-size: 25px;
     height: 58px;
-    background: #e50914;
+    background: #B41414;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -207,14 +265,14 @@ button:hover{
 
 
 
-hr{
+hr {
     height: 5px;
     width: 100%;
     border: none;
     background: #222;
 }
 
-.kids .container{
+.kids .container {
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 70px;
@@ -223,29 +281,31 @@ hr{
     margin: auto 100px;
 }
 
-.left-part img{
+.left-part img {
     height: 380px;
     width: 520px;
     position: relative;
 }
 
-.right-part{
+.right-part {
     max-width: 700px;
     width: 100%;
     padding-right: 10px;
     letter-spacing: 0.1px;
 }
-.right-part h1{
+
+.right-part h1 {
     font-size: 47px;
     font-weight: 600;
 }
-.right-part p{
+
+.right-part p {
     margin-top: 10px;
     font-size: 25px;
     line-height: 35px;
 }
 
-.enjoy{
+.enjoy {
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 70px;
@@ -254,50 +314,50 @@ hr{
     margin: auto 100px;
 }
 
-.enjoy-text{
+.enjoy-text {
     max-width: 700px;
     width: 100%;
     padding-right: 10px;
     letter-spacing: 0.1px;
 }
 
-.enjoy-text h1{
+.enjoy-text h1 {
     font-size: 47px;
     font-weight: 600;
 }
 
-.enjoy-text p{
+.enjoy-text p {
     margin-top: 10px;
     font-size: 25px;
     line-height: 35px;
 }
 
-.enjoy-img{
+.enjoy-img {
     position: relative;
 }
 
-.enjoy-img img{
+.enjoy-img img {
     z-index: 1;
     height: 380px;
     width: 520px;
     position: relative;
 }
 
-.enjoy-video{
+.enjoy-video {
     position: absolute;
     bottom: 50px;
     left: 68px;
     z-index: -1;
 }
 
-.enjoy-video video{
+.enjoy-video video {
     display: inline-block;
     vertical-align: baseline;
     width: 380px;
     height: 300px;
 }
 
-.download{
+.download {
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 100px;
@@ -306,17 +366,17 @@ hr{
     margin: auto 50px;
 }
 
-.mobile{
+.mobile {
     position: relative;
 }
 
-.mobile-img{
+.mobile-img {
     height: 380px;
     width: 520px;
     position: relative;
 }
 
-.box{
+.box {
     position: absolute;
     bottom: 30px;
     left: 100px;
@@ -330,47 +390,48 @@ hr{
     background: #000;
 }
 
-.box img{
+.box img {
     width: 50px;
     height: 70px;
 }
 
-.box h2{
+.box h2 {
     padding-top: 13px;
     font-size: 16px;
     height: 25px;
 }
 
-.box p{
+.box p {
     font-size: 14px;
     color: #0071eb;
+    margin-top: 10px;
 }
 
-.box .gif{
+.box .gif {
     width: 60px;
     height: 60px;
 }
 
-.download-content{
+.download-content {
     max-width: 700px;
     width: 100%;
     padding-right: 10px;
     letter-spacing: 0.1px;
 }
 
-.download-content h1{
+.download-content h1 {
     font-size: 47px;
     font-weight: 600;
     line-height: 50px;
 }
 
-.download-content p{
+.download-content p {
     margin-top: 10px;
     font-size: 25px;
     line-height: 35px;
 }
 
-.stream{
+.stream {
     display: grid;
     grid-template-columns: auto auto;
     grid-column-gap: 70px;
@@ -379,23 +440,23 @@ hr{
     margin: auto 100px;
 }
 
-.stream-content h1{
+.stream-content h1 {
     font-size: 47px;
     font-weight: 600;
     line-height: 50px;
 }
 
-.stream-content p{
+.stream-content p {
     margin-top: 10px;
     font-size: 25px;
     line-height: 35px;
 }
 
-.mac{
+.mac {
     position: relative;
 }
 
-.mac .tv-mac{
+.mac .tv-mac {
     z-index: 1;
     z-index: 1;
     height: 380px;
@@ -403,34 +464,41 @@ hr{
     position: relative;
 }
 
-.tv-2{
+.tv-2 {
     position: absolute;
     bottom: 60px;
     right: 102px;
     z-index: -1;
 }
 
-.tv-2 video{
+.tv-2 video {
     vertical-align: baseline;
     width: 320px;
     height: 400px;
 }
 
-.freq{
-    padding: 70px 180px;
+.freq {
+    padding: 70px 100px;
 }
 
-.freq h1{
+.questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.freq h1 {
     text-align: center;
     font-size: 47px;
     font-weight: 600;
     margin-bottom: 50px;
 }
 
-.freq .questions button{
-    width: 100%;
+.freq .questions button {
+    width: 625px;
     text-align: left;
-    padding: 16px 44px 16px 24px;
+    padding: 16px 24px;
     font-weight: 500;
     font-size: 24px;
     margin-bottom: 10px;
@@ -440,14 +508,14 @@ hr{
     color: #fff;
 }
 
-.questions button span{
+.questions button span {
     float: right;
     font-size: 40px;
     cursor: pointer;
 }
 
-.faq-answer{
-    width: 100%;
+.faq-answer {
+    width: 625px;
     height: auto;
     padding: 30px 40px;
     font-weight: 500;
@@ -459,25 +527,25 @@ hr{
     text-align: left;
 }
 
-.freq .questions .faq-answer span{
+.freq .questions .faq-answer span {
     transform: scaleY(1.2);
     letter-spacing: 0.06em;
 }
 
-.closed{
+.closed {
     display: none !important;
 }
 
-.rotate{
+.rotate {
     transform: rotate(45deg);
 }
 
-.sec{
+.sec {
     display: flex;
     justify-content: center;
 }
 
-.par-b{
+.par-b {
     text-align: center;
     font-size: 16.3px;
     letter-spacing: 0.02em;
@@ -485,66 +553,131 @@ hr{
     margin-bottom: 1.2rem;
 }
 
-.field{
+.field {
     text-align: center;
     margin-bottom: 75px;
 }
 
-input{
+input {
     border: none;
 }
 
-.footer{
+.footer {
     max-width: 85%;
     margin: 70px 200px;
 }
 
-.footer a{
+.footer a {
     color: #888;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
-.footer a:hover{
-  text-decoration: underline;
+
+.footer a:hover {
+    text-decoration: underline;
 }
 
-.footer p{
+.footer p {
     margin-bottom: 2rem;
 }
 
-.footer-column{
+.footer-column {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 4rem;
     padding-top: 20px;
 }
 
-.footer li{
+.footer li {
     line-height: 1.9;
     list-style: none;
     margin-bottom: 8px;
     font-size: 12px;
 }
-.last{
-  margin-top: 30px;
-}
-.last .dropdown__container{
-  width: 13%;
 
-  padding: 13px;
+.last {
+    margin-top: 30px;
 }
-.last p{
+
+.last .dropdown__container {
+    width: 13%;
+
+    padding: 13px;
+}
+
+.last p {
     margin-top: 30px;
     font-size: 14px;
 }
 
-.btn-icon{
+.btn-icon {
     padding: 10px;
     font-size: 20px;
     cursor: pointer;
 }
-.bottom-logo{
-  width: 13%;
-  padding-top: 30px;
- 
+
+.bottom-logo {
+    width: 20%;
+
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar {
+        padding: 2% 5%;
+    }
+
+    .navbar__brand {
+        width: 150px;
+    }
+
+    .signin__button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    .netflix-content h1 {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .get-started {
+        width: 50%;
+    }
+
+    .get-started form {
+        flex-direction: row;
+        align-items: center;
+        gap: 1px;
+    }
+
+    .gs button {
+        height: 50px;
+    }
+
+    .enjoy-tex,
+    .mobile,
+    .stream-content,
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1254px) {}
+
+@media screen and (max-width: 481px) {
+    .signin__button {
+        padding: 0.6rem 0.6rem;
+    }
+
+    .navbar__brand {
+        width: 100px;
+    }
+
+    .brand__logo {
+        width: 100px;
+    }
 }
