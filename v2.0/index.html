@@ -26,7 +26,7 @@
       <div class="navbar-nav-items ">
         <div class="nav-item ">
           <button class="signin-button "><a style="text-decoration: none; color: inherit ; "
-              href="pages/signin.html ">Sign in </a></button>
+              href="pages/signin.html " onclick="">Sign in </a></button>
         </div>
       </div>
     </nav>
@@ -51,9 +51,10 @@
         </p>
 
         <div class="email-form-container ">
-          <div class="form-container ">
-            <input type="email " class="email-input " placeholder=" " />
+          <div class="form-container " id="form">
+            <input type="email " class="email-input " placeholder=" " id="email" onkeydown="validation()"/>
             <label class="email-label ">Email Address</label>
+            <span id="text"></span>
           </div>
           <button class="primary-button "><a style="text-decoration: none; color: inherit ; "
               href="pages/signin.html ">Get Started </a><i class="fal fa-chevron-right ">
@@ -242,7 +243,7 @@
     </div>
   </footer> -->
 
-  <script src="./"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>

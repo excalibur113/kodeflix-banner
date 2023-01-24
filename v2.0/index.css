@@ -27,24 +27,6 @@ body {
 .brand-logo {
   width: 200px;
 }
-
-.language-drop-down {
-  background: transparent;
-  border: none;
-  color: white;
-}
-
-.language-drop-down:focus {
-  outline: none;
-}
-
-.dropdown-container {
-  border: 1px solid white;
-  padding: 0.4rem;
-  border-radius: 4px;
-  background: rgba(0, 0, 0, 0.4);
-}
-
 .signin-button {
   background-color: #dc030f;
   border: 1px solid #dc030f;
